@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">Tic-Tac-Toe</div>
+    <div class="main">
+      <div class="combine">
+        <form action="">
+          <label for="player1-name" hidden>Player 1 Name:</label>
+          <input
+            type="text"
+            id="player1-name"
+            placeholder="Enter player 1 name"
+            required
+          />
+          <label for="player2-name" hidden>Player 2 Name:</label>
+          <input
+            type="text"
+            id="player2-name"
+            placeholder="Enter player 2 name"
+            required
+          />
+          <button class="submit">Begin!</button>
+        </form>
+        <div id="winner-message-container">
+          <p id="winner-message"></p>
+        </div>
+      </div>
+
+      <div class="block">
+        <table id="gameboard" frame="void">
+          <tr>
+            <td id="0"></td>
+            <td id="1"></td>
+            <td id="2"></td>
+          </tr>
+          <tr>
+            <td id="3"></td>
+            <td id="4"></td>
+            <td id="5"></td>
+          </tr>
+          <tr>
+            <td id="6"></td>
+            <td id="7"></td>
+            <td id="8"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer"><p>Copyright © 2023 BMyka</p></div>
+  </body>
+</html>

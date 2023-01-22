@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vh;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  color: #46494b;
+}
+.header {
+  display: grid;
+  align-items: center;
+  color: #b0e4db;
+  font-size: 8rem;
+  font-weight: bold;
+  background-color: #4c5c68;
+  height: 170px;
+  border-bottom: 6px solid #2a3a46;
+}
+.main {
+  background-color: #c5c3c6;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+}
+.footer {
+  display: grid;
+  align-items: center;
+  background-color: #c5c3c6;
+  flex: 1;
+  min-height: 100px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+}
+
+#gameboard {
+  flex: 1;
+  margin: 200px;
+  display: grid;
+  border-collapse: collapse;
+  border: none;
+}
+
+#gameboard td {
+  background-color: #ededee;
+  border: 8px solid #2a3a46;
+  padding: 30px;
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#gameboard td:hover {
+  background-color: #d8e4e9;
+  cursor: pointer;
+}
+
+#gameboard td.X {
+  font-weight: bold;
+  font-size: 6rem;
+  color: #46494b;
+}
+
+#gameboard td.O {
+  font-weight: bold;
+  font-size: 6rem;
+  color: #46494b;
+}
+
+#gameboard td.winner {
+  background-color: #00ff00;
+}
+
+td {
+  width: 1000px;
+  height: 1000px;
+}
+
+tr {
+  width: 150px;
+  height: 100px;
+}
+
+input {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  height: 150px;
+  width: 70%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+button {
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 46px;
+  height: 120px;
+  width: 50%;
+  margin-bottom: 20px;
+  color: #46494b;
+}
+button:hover {
+  background-color: darkgray;
+  cursor: pointer;
+}
+form,
+.combine {
+  align-self: center;
+  justify-content: right;
+}
+
+#winner-message {
+  font-weight: bold;
+  font-size: 48px;
+}
